@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Glass+Antiqua&family=
+Inter:wght@100;400;500&family=Lora:ital,wght@0,500;1,500&family=Montserrat:ital,wght@0,100;
+0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="title.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header
+      id="navbar"
+      class="header justify-content-center align-items-center m-auto mt-3"
+    >
+      <div class="row">
+        <div class="container col-md-4">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./image/Logo.png"
+              alt="phtube"
+              class="logo ps-5 mt-5 ps-md-3"
+            />
+          </a>
+        </div>
+        <div class="col-md-3 sort-view m-auto pe-5 align-items-center">
+          <button
+            id="sort-by-view"
+            class="sort-btn p-3 mt-4"
+            onclick="sortbyview()"
+          >
+            Sort by view
+          </button>
+        </div>
+        <div class="col-md-3 mt-5 ps-5">
+          <a
+            class="navbar-item blog-btn btn btn-danger fs-5"
+            href="./blog.html"
+            target="_blank"
+            >Blog
+          </a>
+        </div>
+      </div>
+    </header>
+    <hr />
+
+    <!-- header end -->
+
+    <!-- catagory part -->
+
+    <div class="catagories">
+      <div
+        id="catagories-btn"
+        class="catagory d-flex justify-content-center align-content-center m-5"
+      >
+        <div class="all m-2">
+          <button onclick="loadAllData()" class="btn btn-danger">All</button>
+        </div>
+        <div class="music m-2">
+          <button onclick="loadmusicdata()" class="btn btn-secondary">
+            Music
+          </button>
+        </div>
+        <div class="comedy m-2">
+          <button onclick="loadComedyData()" class="btn btn-secondary">
+            Comedy
+          </button>
+        </div>
+        <div class="drawing m-2">
+          <button onclick="loadDrawingData()" class="btn btn-secondary">
+            Drawing
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- catagpry end -->
+
+    <!-- DISPLAY EACH VIDEO -->
+    <div id="video-container" class="row"></div>
+
+    <!-- js file -->
+    <script src="./app.js"></script>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
